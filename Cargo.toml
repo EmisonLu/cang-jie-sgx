@@ -11,7 +11,7 @@ keywords = ["search", "tokenizer", "Chinese", "tantivy"]
 
 [dependencies]
 tantivy = "0.12.0"
-jieba-rs = { path = "../jieba-rs"}
+jieba-rs = { git = "https://github.com/EmisonLu/jieba-rs-sgx"}
 log = "0.4.11"
 
 [dev-dependencies]
