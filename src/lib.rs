@@ -1,7 +1,7 @@
-#![feature(prelude_import)]
 #![no_std]
+// use std::prelude::v1::*;
 #[macro_use]
-extern crate std as std;
+extern crate sgx_tstd as std;
 
 pub use crate::{
     options::TokenizerOption, stream::CangjieTokenStream, tokenizer::CangJieTokenizer,

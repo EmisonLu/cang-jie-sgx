@@ -1,4 +1,3 @@
-/// Tokenizer Option
 use std::prelude::v1::*;
 #[derive(Debug, Clone)]
 pub enum TokenizerOption {

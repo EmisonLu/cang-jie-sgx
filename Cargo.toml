@@ -10,7 +10,7 @@ readme = "README.MD"
 keywords = ["search", "tokenizer", "Chinese", "tantivy"]
 
 [dependencies]
-tantivy = "0.12.0"
+tantivy = { git = "https://github.com/lengyijun/tantivy"}
 jieba-rs = { git = "https://github.com/EmisonLu/jieba-rs-sgx"}
 log = "0.4.11"
 
