@@ -1,5 +1,4 @@
 #![no_std]
-// use std::prelude::v1::*;
 #[macro_use]
 extern crate sgx_tstd as std;
 

@@ -12,7 +12,11 @@ keywords = ["search", "tokenizer", "Chinese", "tantivy"]
 [dependencies]
 tantivy =  { git = "https://github.com/lengyijun/tantivy",branch="sgx"}
 jieba-rs = { git = "https://github.com/EmisonLu/jieba-rs-sgx"}
-log = "0.4.11"
+log = { git = "https://github.com/mesalock-linux/log-sgx", branch = "master", features = ["kv_unstable"] }
 
 [dev-dependencies]
 flexi_logger = "0.15.10"
+
+[target.'cfg(not(target_env = "sgx"))'.dependencies]
+sgx_tstd = { version = "1.0", rev = "v1.1.2", git = "https://github.com/apache/teaclave-sgx-sdk.git", features=["untrusted_fs","thread", "backtrace"] }
+sgx_libc = { version = "1.0", rev = "v1.1.2", git = "https://github.com/apache/teaclave-sgx-sdk.git" }
